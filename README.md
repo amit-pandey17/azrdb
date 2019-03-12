@@ -1,2 +1,2 @@
 # azrdb
-This project will hold all the DB objetc creatd with my Azure Dev instance.
+This project will hold all the DB object created with my Azure Dev instance.
