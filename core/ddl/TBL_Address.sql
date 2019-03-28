@@ -8,16 +8,14 @@ create table core.Address
     city varchar(50),
     [state] varchar(50),
     country varchar(50),
+    [Type] INT IDENTITY(1,1) FOREIGN Key,
 );
 create table core.Address_type
 (
     address_key INT IDENTITY(1,1) PRIMARY KEY,
     [name] varchar(100),
-    Home varchar(100),
-    Work varchar(100),
-    Hotel varchar(100),
-);
-
+)
 -- Initial Data Load.
 
 insert into core.Address VALUES ('123 street', '234 way', 'Tempe', 'Arizona', 'United States');
+insert into core.Address_type VALUES('Home','Work','Hotel');
